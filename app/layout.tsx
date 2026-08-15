@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/ui/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +24,14 @@ export const viewport: Viewport = {
   maximumScale: 1,
 };
 
+const navigation = [
+  { label: "Главная", href: "/" },
+  { label: "О бюро", href: "/oburo" },
+  { label: "Услуги", href: "/uslugi" },
+  { label: "Портфолио", href: "/portfolio" },
+  { label: "Контакты", href: "/contacts" },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -31,9 +40,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1c1212] text-white`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Header navigation={navigation} />
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );
