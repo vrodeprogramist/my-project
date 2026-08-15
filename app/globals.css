@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1c1515;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  background:#1c1515;
+  color: var(--foreground);
+  font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+}
+
+
+/* Делаем весь текст на сайте белым */
+body {
+  color: #ffffff; /* Белый текст */
+  background-color: #1c1515; /* Тёмный фон, как у хедера (чтобы фон был единым) */
+}
+
+/* Для всех ссылок, чтобы были видны */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}

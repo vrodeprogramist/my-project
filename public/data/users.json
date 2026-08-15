@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@mail.com",
+      "password": "admin123",
+      "name": "Администратор"
+    },
+    {
+      "id": 2,
+      "email": "user@mail.com",
+      "password": "user123",
+      "name": "Пользователь"
+    },
+    {
+      "id": 3,
+      "email": "ada@mail.ru",
+      "password": "3244242422424",
+      "name": "dadad"
+    },
+    {
+      "id": 4,
+      "email": "dgsgs@ada.ru",
+      "password": "treterterhyeheh",
+      "name": "dsgsdgsdgdsg"
+    },
+    {
+      "id": 5,
+      "email": "dfdsdf@gfdg.ru",
+      "password": "203902932903920390290323323",
+      "name": "dssdfdf"
+    },
+    {
+      "id": 6,
+      "email": "sadsfsf@FSF.ER",
+      "password": "DFGSDFSFSFDSF",
+      "name": "dfsfsfs"
+    },
+    {
+      "id": 7,
+      "email": "123@1.1",
+      "password": "12345678",
+      "name": "AAA"
+    },
+    {
+      "id": 8,
+      "email": "fdsfsdfd@mail.ru",
+      "password": "ффсчыфсы",
+      "name": "ваываы"
+    }
+  ]
+}
