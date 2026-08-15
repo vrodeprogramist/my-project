@@ -19,7 +19,7 @@ const navigation = [
 export default function uslugi() {
   return (
     <div>
-              <Header2 navigation={navigation} />
+              <Header navigation={navigation} />
 <Hero 
   title="Вы можете посмотреть наши работы"
   
