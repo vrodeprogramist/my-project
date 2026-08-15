@@ -18,7 +18,7 @@ const navigation = [
 export default function About() {
   return (
     <div>
-            <Header2 navigation={navigation} />
+            <Header navigation={navigation} />
 <Hero 
   subtitle="Наши Контакты"
   
