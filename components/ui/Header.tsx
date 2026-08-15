@@ -22,8 +22,9 @@ export default function Header({ logo, navigation, actions }: HeaderProps) {
               <img 
                 src="/images2/Логотип2.png" 
                 alt="logo" 
-                className="h-16 w-auto md:h-20 lg:h-24"
-                style={{ minHeight: "60px" }}
+                className="h-20 w-auto md:h-24 lg:h-28" 
+  style={{ minHeight: "80px" }}
+/>
               />
             )}
           </div>
