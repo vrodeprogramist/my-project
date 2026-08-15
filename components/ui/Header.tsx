@@ -23,7 +23,7 @@ export default function Header({ logo, navigation, actions }: HeaderProps) {
               <img 
                 src="/images2/Логотип2.png" 
                 alt="logo" 
-                className="h-8 w-auto sm:h-10"
+                className="h-560 w-auto sm:h-700"
               />
             )}
           </div>
