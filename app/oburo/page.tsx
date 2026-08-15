@@ -18,7 +18,7 @@ export default function About() {
   return (
     
     <div className="h-xl">
-        <Header2 navigation={navigation} />
+        <Header navigation={navigation} />
         <div className="flex justify-center">
             <div className="w-2/3">
 <Hero 
