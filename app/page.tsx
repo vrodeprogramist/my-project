@@ -1,9 +1,7 @@
-'use client'
-import Button from "@/components/ui/Button";
-import Hero from "@/components/ui/Hero";
+"use client";
+
 import Header from "@/components/ui/Header";
-import { useRouter } from "next/navigation";
-import RegisterForm from "@/components/ui/RegisterForm";
+import Hero from "@/components/ui/Hero";
 
 const navigation = [
   { label: "Главная", href: "/" },
@@ -14,23 +12,17 @@ const navigation = [
 ];
 
 export default function Home() {
-  const router = useRouter();
-  
   return (
-    <div>
+    <div className="min-h-screen bg-[#1c1212]">
       <Header navigation={navigation} />
       <Hero 
         primaryButton={{
           text: "Client Access",
-          onClick: () => router.push("/register"),
-          
+          onClick: () => console.log("Клик"),
         }}
         title=""
-        description="Эксклюзивная архитектура. Ваше приватное пространство.
-Мы работаем с ограниченным числом клиентов год, чтобы гарантировать максимальное внимание к деталям и полную конфиденциальность. Ваш проект будет уникальным, как отпечаток пальца, а процесс его создания - таким же закрытым."
+        description="Эксклюзивная архитектура. Ваше приватное пространство. Мы работаем с ограниченным числом клиентов год, чтобы гарантировать максимальное внимание к деталям и полную конфиденциальность. Ваш проект будет уникальным, как отпечаток пальца, а процесс его создания - таким же закрытым."
       />
-
-      
     </div>
   );
 }
